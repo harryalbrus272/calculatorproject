@@ -1,1 +1,67 @@
 /*Calculator project stylesheet*/
+*{margin: 0; padding:0;}
+html{
+  background-image: url(https://lh3.googleusercontent.com/5ke320uEKR_YDXbt-VDy-U1PkekWHshR76m-ej5ZIy1auTn0_2sBKc0bMIgoqf-60gvVTljlEMhJwu6lUrUjBr4ifNoO7I0lxFBeuoqz2294Ls3pHYGWwCZ0jaAM9Wzv0LqRdOq_9DKKJtLfuEgTiffKP-bu6sKAAQetGQ1aOzt0PggNTV6sAMeIR92dQU4SZZE4J94pU4OykUx0tdKzONsnRR5oa_xkd_WvC_S5HEaEpctLUYtJA6yhfnjuWNv4Libqaa8nDhWCqSqeXufVAmg1GJyTAnil_oqjS0zSw11EWlEIhYte5cAqrylZank-QkZW68y10eCf5iDYR-YlP_o8LwhnNefwIpGH_M7GQsOPUIPVP_90a3fch_-jAvFh0ejsn17dv3ThKzNwzgPaYLRpME09JrbpBu4B2BSKIH8u17f2jpm9Va3zx6fXpEGcSZupdy2VerMQjqUd7LNn7b4bXLyPTEj1HNzAlvf2Ub4ZFEYfme7zVc10Ykf2I9-sInWHFj-g2GorNEz6eot8zOwb2a5N61uQ8tnBs_XBjLx8Q7OmB9u63_QQLqpKglBXFxybB67uQQQ0YDV8YoYlxwTct3cxJmiHDeHuSPm2UX-bFkkd7L5aYJ-cDCgxR4mic8U-5KlLF3fA-zASa77Q_-7UGA79SqFdCCs8myhAVvo8diKGIP9P143etuIE=w1043-h695-no?authuser=0);
+}
+body{
+  font-family: monospace;
+  display: grid;
+  place-items: center;
+}
+.header-slab{
+  background-color: black;
+  width: 100vw;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+main{
+  height: 520px;
+  width:310px;
+  background-color: lightgrey;
+  padding: 1%;
+  margin: 0 5%;
+  margin-top: 2%;
+  border-radius: 0.4rem;
+  position: relative;
+}
+.display-window{
+  background-color: white;
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 20%;
+}
+.buttons-container{
+  background-color: purple;
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+}
+.triple-length{
+  min-width: 215px;
+}
+button{
+  background-color: transparent;
+  position: relative;
+  outline: none;
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 2%;
+  font-size: 1.2rem;
+}
+.round-border{
+  display: block;
+  background-color: lightgrey;
+  width: 100%;
+  height: 50%;
+  padding: 2%;
+  border-radius: 50%;
+  line-height: 2rem;
+}
