@@ -18,10 +18,16 @@ body{
   text-align: center;
   border-radius: 0 0 0.5rem 0.5rem;
 }
+#history{
+  overflow: hidden;
+}
+#results{
+  overflow: hidden;
+}
 main{
   height:600px;
   width:330px;
-  background-color: lightgrey;
+  background-color: #7b7a7947;
   padding: 1%;
   margin: 0 5%;
   margin-top: 1%;
@@ -45,7 +51,6 @@ main{
 }
 #history p{
   padding-top: 2%;
-
 }
 #results{
   text-align: right;
@@ -56,7 +61,6 @@ main{
 .keyboard{
   width: 96%;
   height:80%;
-  background-color: #907761;
   margin: 2% auto;
   border-radius: 0.4rem 0;
   position: relative;
@@ -64,6 +68,7 @@ main{
 .keyboard{
   display: flex;
   flex-wrap: wrap;
+  background-color: #e8e8e8;
 }
 .button-box{
   min-height: 95px;
@@ -72,15 +77,36 @@ main{
   align-items: center;
   justify-content: center;
 }
+.button-box:nth-child(4n){
+  min-width: 78px;
+  border-left: 1px black solid;
+}
+.button-box:nth-child(18){
+  min-width: 78px;
+  border-left: 1px black solid;
+}
 .zero{
   min-width: 237px;
 }
 button[type="button"]{
   outline: none;
-  background: transparent;
+  border: none;
+  background: #cfd3ce;
   height: 50px;
   width: 50px;
-  border: 2px darkgrey solid;
+  box-shadow: 0 0 10px 1px lightgrey;
   border-radius: 50%;
   font-size: 1.2rem;
+}
+.button-box:hover{
+  transition: all 0.5s ease-in-out;
+  background-image: radial-gradient( #30475e82, #e8e8e8);
+}
+button[type="button"]:hover{
+  background: #839b97;
+  box-shadow: 1px 1px 10px 1px #34626c;
+  font-size: 1.1rem;
+}
+#all-clear{
+  color: red;
 }
