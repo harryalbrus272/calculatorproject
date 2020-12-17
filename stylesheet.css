@@ -1,12 +1,14 @@
 /*Calculator project stylesheet*/
 *{margin: 0; padding:0;}
 html{
-  background-image: url(https://lh3.googleusercontent.com/5ke320uEKR_YDXbt-VDy-U1PkekWHshR76m-ej5ZIy1auTn0_2sBKc0bMIgoqf-60gvVTljlEMhJwu6lUrUjBr4ifNoO7I0lxFBeuoqz2294Ls3pHYGWwCZ0jaAM9Wzv0LqRdOq_9DKKJtLfuEgTiffKP-bu6sKAAQetGQ1aOzt0PggNTV6sAMeIR92dQU4SZZE4J94pU4OykUx0tdKzONsnRR5oa_xkd_WvC_S5HEaEpctLUYtJA6yhfnjuWNv4Libqaa8nDhWCqSqeXufVAmg1GJyTAnil_oqjS0zSw11EWlEIhYte5cAqrylZank-QkZW68y10eCf5iDYR-YlP_o8LwhnNefwIpGH_M7GQsOPUIPVP_90a3fch_-jAvFh0ejsn17dv3ThKzNwzgPaYLRpME09JrbpBu4B2BSKIH8u17f2jpm9Va3zx6fXpEGcSZupdy2VerMQjqUd7LNn7b4bXLyPTEj1HNzAlvf2Ub4ZFEYfme7zVc10Ykf2I9-sInWHFj-g2GorNEz6eot8zOwb2a5N61uQ8tnBs_XBjLx8Q7OmB9u63_QQLqpKglBXFxybB67uQQQ0YDV8YoYlxwTct3cxJmiHDeHuSPm2UX-bFkkd7L5aYJ-cDCgxR4mic8U-5KlLF3fA-zASa77Q_-7UGA79SqFdCCs8myhAVvo8diKGIP9P143etuIE=w1043-h695-no?authuser=0);
+
 }
 body{
   font-family: monospace;
   display: grid;
   place-items: center;
+  background-image: url(https://cdn.pixabay.com/photo/2020/12/09/17/18/letters-5818033_960_720.jpg);
+  background-size: cover;
 }
 .header-slab{
   background-color: black;
@@ -27,9 +29,8 @@ body{
 main{
   height:600px;
   width:330px;
-  background-color: #7b7a7947;
+  background-color: #839b97;
   padding: 1%;
-  margin: 0 5%;
   margin-top: 1%;
   border-radius: 0.4rem;
   position: relative;
@@ -39,7 +40,7 @@ main{
   height:15%;
   background: white;
   margin: 2% auto;
-  border-radius: 0.4rem 0;
+  border-radius: 0.6rem 0;
   position: relative;
 }
 #history{
@@ -62,7 +63,7 @@ main{
   width: 96%;
   height:80%;
   margin: 2% auto;
-  border-radius: 0.4rem 0;
+  border-radius: 0.6rem 0;
   position: relative;
 }
 .keyboard{
