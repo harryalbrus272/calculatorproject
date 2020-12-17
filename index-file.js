@@ -62,6 +62,10 @@ for (var i = 0; i < operators.length; i++) {
       if (output != "" || history != "") {
         //conditional statement
         output = output == "" ? output : reverseNumberFormat(output);
+        if(isNaN(output)){
+          alert("Wrong operation!!!!!!");
+          output="0";
+        }
         history = history + output;
         if (this.id == "=") {
           var res = eval(history);
@@ -108,6 +112,10 @@ window.addEventListener('keydown', (event) => {
     //conditional statement
     output = output == "" ? output : reverseNumberFormat(output);
     console.log(output);
+    if(isNaN(output)){
+      alert("Wrong operation!!!!!!");
+      output="0";
+    }
     history = history + output;
     if (key == "Enter") {
       if (output == "" && history != "") {
@@ -116,6 +124,7 @@ window.addEventListener('keydown', (event) => {
         }
       }
       var res = eval(history);
+
       printResults(res);
       printHistory("");
     } else if (key == "/" || key == "*" || key == "+" || key == "-") {
